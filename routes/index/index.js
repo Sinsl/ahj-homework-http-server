@@ -1,9 +1,9 @@
 const Router = require('koa-router');
 
-const router = new Router();
+const router = new Router({ prefix: '/ticket'});
 
 router.get('/index', async (ctx) => {
-  ctx.response.body = 'hello';
+  ctx.response.body = {status: 'ok'}; 
 });
 
 module.exports = router;

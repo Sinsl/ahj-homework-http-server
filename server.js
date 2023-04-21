@@ -26,7 +26,6 @@ app.use(async (ctx, next) => {
       throw e;
     }
   }
-  console.log()
   if (ctx.request.get('Access-Control-Request-Method')) {
     ctx.response.set({
       ...headers,
